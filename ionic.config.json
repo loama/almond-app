@@ -1,0 +1,7 @@
+{
+  "name": "almond",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

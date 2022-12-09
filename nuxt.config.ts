@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss']
+  app: {
+    head: {
+      title: "almond gyn app",
+      viewport: "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no, viewport-fit=cover"
+    }
+  },
+  modules: ['@nuxtjs/tailwindcss'],
+  ssr: false
 })
