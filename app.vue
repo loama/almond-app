@@ -1,20 +1,31 @@
 <template>
   <div>
-    <div id="navbar-top" class="border-zinc-200 bg-white border-b box-content fixed left-0 text-center top-0 w-screen">
-      <img class="h-4 inline-block mt-4" src="~/assets/img/almond.png" alt="almond logo" />
+    <NavigationTop />
+
+    <div id="content" class="bg-white box-content h-screen">
+      <RouterView />
     </div>
 
-    <div id="content" class="bg-white box-content h-screen">content</div>
+    <NavigationBottom />
 
-    <div id="navbar-bottom" class="border-zinc-200 bg-white border-t bottom-0 box-content fixed left-0 w-screen">
-      navigation
-    </div>
+    <ModalOverlay />
+
+    <!-- Modals -->
+    <AccountModal />
   </div>
 </template>
+
+<script>
+export default {
+}
+</script>
 
 <style lang="sass">
 html, body
   overflow: hidden
+
+*
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 $navbar-top-height: 56px
 $navbar-bottom-height: 56px
