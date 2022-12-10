@@ -9,6 +9,31 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   ssr: false,
   tailwindcss: {
-    configPath: 'tailwind.config.js'
+    config: {
+      content: [
+        `./components/**/*.{vue,js,ts}`,
+        `./layouts/**/*.vue`,
+        `./pages/**/*.vue`,
+        `./composables/**/*.{js,ts}`,
+        `./plugins/**/*.{js,ts}`,
+        `./App.{js,ts,vue}`,
+        `./app.{js,ts,vue}`,
+        `./Error.{js,ts,vue}`,
+        `./error.{js,ts,vue}`
+      ],
+      // darkMode: false, // or 'media' or 'class'
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#E97964',
+            'secondary': '#F3EBE2',
+          }
+        }
+      },
+      variants: {
+        extend: {}
+      },
+      plugins: []
+    }
   }
 })

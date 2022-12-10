@@ -12,9 +12,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      'primary': '#E97964',
-      'secondary': '#F3EBE2',
+    extend: {
+      colors: {
+        'primary': '#E97964',
+        'secondary': '#F3EBE2',
+      }
     }
   },
   variants: {

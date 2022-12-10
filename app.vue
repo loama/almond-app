@@ -19,7 +19,11 @@
 <script>
 export default {
   mounted() {
-    this.$router.push({ query: { modal: 'onboarding' } })
+    const loggedIn = localStorage.getItem('loggedIn')
+
+    if (!loggedIn) {
+      this.$router.push({ query: { modal: 'onboarding' } })
+    }
 
     const self = this
     window.addEventListener('statusTap', function () {
