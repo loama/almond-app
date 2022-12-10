@@ -17,8 +17,6 @@
 </template>
 
 <script>
-import { StatusBar } from '@capacitor/status-bar'
-
 export default {
   mounted() {
     this.$router.push({ query: { modal: 'onboarding' } })

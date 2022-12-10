@@ -4,15 +4,15 @@
       <swiper :modules="modules" :navigation="{ nextEl: '.slideNext-btn' }" :pagination="true" :slides-per-view="1"
         :space-between="0">
         <swiper-slide>
-          <OnboardingSlide1 />
+          <OnboardingModalSlide1 />
         </swiper-slide>
 
         <swiper-slide>
-          <OnboardingSlide2 />
+          <OnboardingModalSlide2 />
         </swiper-slide>
 
         <swiper-slide>
-          <OnboardingSlide3 />
+          <OnboardingModalSlide3 />
         </swiper-slide>
       </swiper>
     </div>
@@ -44,13 +44,6 @@ export default {
       } else {
         this.$refs.onboardingSwiper.swiper.slideNext()
       }
-    }
-  },
-  setup() {
-    const swiper = useSwiper()
-
-    return {
-      swiper
     }
   }
 }
