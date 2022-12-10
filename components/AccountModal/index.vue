@@ -9,10 +9,18 @@
 
 <script>
 export default {
-  computed: {
-    loggedIn() {
-      return localStorage.getItem('loggedIn') !== null
+  data() {
+    return {
+      loggedIn: null
     }
+  },
+  mounted() {
+    this.loggedIn = localStorage.getItem('loggedIn')
+
+    const self = this
+    window.addEventListener('loggedIn-localstorage-changed', (event) => {
+      self.loggedIn = localStorage.getItem('loggedIn')
+    })
   }
 }
 </script>

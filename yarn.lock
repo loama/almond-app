@@ -307,6 +307,11 @@
   "resolved" "https://registry.npmjs.org/@capacitor/ios/-/ios-4.6.1.tgz"
   "version" "4.6.1"
 
+"@capacitor/keyboard@^4.1.0":
+  "integrity" "sha512-5fanmJLdkXLEaro0oezkmpC15tBGlsLW4cp1jQTMPwyX6NLlPUFHdWUhMERzxL2QXHmHvtoFMJ4m15Eymgefuw=="
+  "resolved" "https://registry.npmjs.org/@capacitor/keyboard/-/keyboard-4.1.0.tgz"
+  "version" "4.1.0"
+
 "@capacitor/status-bar@^4.1.1":
   "integrity" "sha512-3wosxMD1XuIFz88+c2GdVEHSJV6u7suOeKQjyWf3zf9eFr622Sg+udZqDbC0dtTWXw97BWyCjv3r1EYJw7XnIA=="
   "resolved" "https://registry.npmjs.org/@capacitor/status-bar/-/status-bar-4.1.1.tgz"
