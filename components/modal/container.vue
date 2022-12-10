@@ -1,9 +1,11 @@
 <template>
   <div
-    class="modal-container min-h-12 rounded-t-2xl bg-white bottom-0 duration-300 fixed left-0 transition w-screen z-50"
-    v-bind:class="{
-      'open': open
-    }">
+    class="modal-container min-h-12 rounded-t-2xl bottom-0 duration-300 fixed left-0 overflow-hidden transition w-screen z-50"
+    v-bind:style="{
+      'background': background
+    }" v-bind:class="{
+  'open': open
+}">
     <slot></slot>
   </div>
 </template>
@@ -16,6 +18,10 @@ export default {
     }
   },
   props: {
+    background: {
+      type: String,
+      default: 'white'
+    },
     name: {
       type: String,
       required: true

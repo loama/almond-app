@@ -21,7 +21,9 @@
     "@capacitor/android": "^4.6.1",
     "@capacitor/core": "^4.6.1",
     "@capacitor/ios": "^4.6.1",
+    "@capacitor/status-bar": "^4.1.1",
     "node-sass": "^8.0.0",
-    "sass": "^1.56.2"
+    "sass": "^1.56.2",
+    "swiper": "^8.4.5"
   }
 }
