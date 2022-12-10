@@ -1,5 +1,6 @@
 <template>
-  <div class="modal-container min-h-12 rounded-t-2xl bg-white bottom-0 duration-300 fixed left-0 transition w-screen"
+  <div
+    class="modal-container min-h-12 rounded-t-2xl bg-white bottom-0 duration-300 fixed left-0 transition w-screen z-50"
     v-bind:class="{
       'open': open
     }">

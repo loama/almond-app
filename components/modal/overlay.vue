@@ -1,5 +1,5 @@
 <template>
-  <div class="opacity-40 bg-black duration-300 fixed h-screen left-0 top-0 transition w-screen" v-bind:class="{
+  <div class="opacity-40 bg-black duration-300 fixed h-screen left-0 top-0 transition w-screen z-40" v-bind:class="{
     'opacity-0 pointer-events-none': $route.query.modal === undefined,
     'opacity-70 pointer-events-auto': $route.query.modal !== undefined
   }" v-on:click="closeModal()"></div>

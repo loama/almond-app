@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/tailwindcss'],
-  ssr: false
+  ssr: false,
+  tailwindcss: {
+    configPath: 'tailwind.config.js'
+  }
 })
