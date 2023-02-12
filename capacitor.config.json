@@ -8,9 +8,5 @@
       "resize": "none",
       "style": "Default"
     }
-  },
-  "server": {
-    "url": "http://192.168.68.111:3000",
-    "cleartext": true
   }
 }
